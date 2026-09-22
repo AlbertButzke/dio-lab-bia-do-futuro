@@ -4,39 +4,99 @@
     "categoria": "renda_fixa",
     "risco": "baixo",
     "rentabilidade": "100% da Selic",
+    "informativo_rentabilidade": "A rentabilidade acompanha a taxa Selic, sendo pós-fixada e ajustada diariamente.",
     "aporte_minimo": 30.00,
-    "indicado_para": "Reserva de emergência e iniciantes"
+    "indicado_para": "Reserva de emergência e iniciantes",
+    "perfil_investidor": "conservador"
   },
   {
     "nome": "CDB Liquidez Diária",
     "categoria": "renda_fixa",
     "risco": "baixo",
     "rentabilidade": "102% do CDI",
+    "informativo_rentabilidade": "A rentabilidade é pós-fixada, atrelada ao CDI, com liquidez diária.",
     "aporte_minimo": 100.00,
-    "indicado_para": "Quem busca segurança com rendimento diário"
+    "indicado_para": "Quem busca segurança com rendimento diário",
+    "perfil_investidor": "conservador"
   },
   {
     "nome": "LCI/LCA",
     "categoria": "renda_fixa",
     "risco": "baixo",
     "rentabilidade": "95% do CDI",
+    "informativo_rentabilidade": "A rentabilidade é pós-fixada, atrelada ao CDI, com isenção de IR.",
     "aporte_minimo": 1000.00,
-    "indicado_para": "Quem pode esperar 90 dias (isento de IR)"
+    "indicado_para": "Quem pode esperar 90 dias (isento de IR)",
+    "perfil_investidor": "conservador"
   },
   {
     "nome": "Fundo Multimercado",
     "categoria": "fundo",
     "risco": "medio",
     "rentabilidade": "CDI + 2%",
+    "informativo_rentabilidade": "A rentabilidade depende da estratégia do gestor, podendo incluir renda fixa, ações e câmbio.",
     "aporte_minimo": 500.00,
-    "indicado_para": "Perfil moderado que busca diversificação"
+    "indicado_para": "Perfil moderado que busca diversificação",
+    "perfil_investidor": "moderado"
   },
   {
     "nome": "Fundo de Ações",
     "categoria": "fundo",
     "risco": "alto",
     "rentabilidade": "Variável",
+    "informativo_rentabilidade": "A rentabilidade depende da valorização das ações escolhidas pelo gestor.",
     "aporte_minimo": 100.00,
-    "indicado_para": "Perfil arrojado com foco no longo prazo"
+    "indicado_para": "Perfil arrojado com foco no longo prazo",
+    "perfil_investidor": "arrojado"
+  },
+  {
+    "nome": "Debêntures Incentivadas",
+    "categoria": "renda_fixa",
+    "risco": "medio",
+    "rentabilidade": "IPCA + 5%",
+    "informativo_rentabilidade": "A rentabilidade é híbrida, composta por inflação (IPCA) mais taxa fixa, com isenção de IR.",
+    "aporte_minimo": 1000.00,
+    "indicado_para": "Investidores moderados que buscam isenção de IR",
+    "perfil_investidor": "moderado"
+  },
+  {
+    "nome": "ETF BOVA11",
+    "categoria": "etf",
+    "risco": "alto",
+    "rentabilidade": "Segue o Ibovespa",
+    "informativo_rentabilidade": "A rentabilidade acompanha a variação do índice Ibovespa.",
+    "aporte_minimo": 50.00,
+    "indicado_para": "Perfil arrojado que busca exposição ao mercado de ações",
+    "perfil_investidor": "arrojado"
+  },
+  {
+    "nome": "ETF HASH11",
+    "categoria": "etf",
+    "risco": "alto",
+    "rentabilidade": "Segue índice global de criptoativos",
+    "informativo_rentabilidade": "A rentabilidade acompanha a variação de um índice global de criptomoedas.",
+    "aporte_minimo": 50.00,
+    "indicado_para": "Investidores arrojados interessados em criptomoedas",
+    "perfil_investidor": "arrojado"
+  },
+  {
+    "nome": "Bitcoin",
+    "categoria": "cripto",
+    "risco": "altissimo",
+    "rentabilidade": "Variável conforme mercado",
+    "informativo_rentabilidade": "A rentabilidade depende exclusivamente da oferta e demanda global, com alta volatilidade.",
+    "aporte_minimo": 100.00,
+    "indicado_para": "Perfil arrojado disposto a alta volatilidade",
+    "perfil_investidor": "arrojado"
+  },
+  {
+    "nome": "Startup Equity",
+    "categoria": "private_equity",
+    "risco": "altissimo",
+    "rentabilidade": "Potencial multiplicador (sem garantias)",
+    "informativo_rentabilidade": "A rentabilidade depende do crescimento e valorização da empresa investida, podendo resultar em ganhos elevados ou perda total.",
+    "aporte_minimo": 5000.00,
+    "indicado_para": "Investidores experientes que aceitam risco elevado",
+    "perfil_investidor": "arrojado"
   }
 ]
