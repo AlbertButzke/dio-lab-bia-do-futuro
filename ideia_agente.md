@@ -1,4 +1,4 @@
-# Ideias e Requisitos do Agente
+# Ideias e Requisitos do Agente (Sumé)
 
 A ideia é que o agente consiga através dos dados da pessoa, como perfil de investimento, saldos e os investimentos acessiveis na plataforma, o usuário possa ser informado sobre qual investimento ele pode colocar o seu dinheiro, e mostrar quanto de dinheiro ele pode colocar, informando rentabilidade e aporte mínimo. 
 
