@@ -4,6 +4,11 @@
 ![Python](https://img.shields.io/badge/python-3.10+-blue)
 ![Streamlit](https://img.shields.io/badge/streamlit-app-red)
 
+## Chat disponível em:
+<a href="https://dio-lab-bia-do-futuro-sume.streamlit.app/" target="_blank">
+  <img src="image/dio-lab-bia-do-futuro-sume.streamlit.png" alt="Accesso ao chat com o agente">
+</a>
+
 > Agente de IA Generativa focado em controle de gastos, educação financeira básica e planejamento de metas pessoais, desenvolvido como parte do **Bootcamp Bradesco - GENAI & Dados** na [DIO](https://www.dio.me/).
 
 ---
