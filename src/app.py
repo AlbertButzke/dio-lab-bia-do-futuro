@@ -1,3 +1,38 @@
+import json
+import os
+import time
+import re
+from pathlib import Path
+import pandas as pd
+import requests
+import streamlit as st
+from dotenv import load_dotenv
+from google import genai
+from google.genai.errors import ServerError  
+
+# ============ CONFIGURAÇÃO ============
+# 1. Tenta carregar do arquivo .env (caso esteja rodando localmente)
+env_path = Path(__file__).resolve().parent.parent / ".env"
+if env_path.exists():
+    load_dotenv(dotenv_path=env_path)
+else:
+    load_dotenv()
+
+GEMINI_API_KEY = st.secrets.get("GEMINI_API_KEY") or os.getenv("GEMINI_API_KEY")
+
+# Modelo principal e modelo de backup em caso de instabilidade
+MODELO_PRINCIPAL = "gemini-3.5-flash-lite"
+MODELO_FALLBACK = "gemini-2.5-flash"
+
+if not GEMINI_API_KEY:
+    st.error(
+        "❌ Chave GEMINI_API_KEY não encontrada! Configure os Secrets no Streamlit Cloud ou adicione o arquivo .env localmente."
+    )
+    st.stop()
+
+# Inicializa o cliente da API
+client = genai.Client(api_key=GEMINI_API_KEY)
+
 # ============ GERENCIADOR DE DADOS ============
 class GerenciadorDeDados:
 
