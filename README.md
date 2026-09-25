@@ -163,7 +163,7 @@ Tem alguma dúvida sobre como a inflação impacta o seu planejamento ou quer ve
 --- 
 
 **Pergunta:** ```Se eu investir 200 reais por mês em IPCA, quanto eu terei em 1 ou 3 anos?```  
-**PCFinance:** 
+**Sumé:** 
 ```
 Olá, João!
 
