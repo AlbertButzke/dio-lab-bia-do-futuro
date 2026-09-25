@@ -11,14 +11,21 @@ from google import genai
 from google.genai.errors import ServerError  
 
 # ============ CONFIGURAÇÃO ============
-# 1. Tenta carregar do arquivo .env (caso esteja rodando localmente)
+# 1. Carrega o arquivo .env se ele existir localmente
 env_path = Path(__file__).resolve().parent.parent / ".env"
 if env_path.exists():
     load_dotenv(dotenv_path=env_path)
 else:
     load_dotenv()
 
-GEMINI_API_KEY = st.secrets.get("GEMINI_API_KEY") or os.getenv("GEMINI_API_KEY")
+# 2. Busca a chave com tratamento de exceção para st.secrets
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+
+if not GEMINI_API_KEY:
+    try:
+        GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+    except (FileNotFoundError, KeyError, AttributeError):
+        GEMINI_API_KEY = None
 
 # Modelo principal e modelo de backup em caso de instabilidade
 MODELO_PRINCIPAL = "gemini-3.5-flash-lite"
@@ -26,11 +33,11 @@ MODELO_FALLBACK = "gemini-2.5-flash"
 
 if not GEMINI_API_KEY:
     st.error(
-        "❌ Chave GEMINI_API_KEY não encontrada! Configure os Secrets no Streamlit Cloud ou adicione o arquivo .env localmente."
+        "❌ Chave GEMINI_API_KEY não encontrada! Configure o .env localmente ou os Secrets no Streamlit Cloud."
     )
     st.stop()
 
-# Inicializa o cliente da API
+# Inicializa o cliente
 client = genai.Client(api_key=GEMINI_API_KEY)
 
 # ============ GERENCIADOR DE DADOS ============
