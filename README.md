@@ -53,6 +53,7 @@ flowchart TD
     D --> D3
     D --> D4
     D --> D5
+```
 
 ---
 
@@ -111,7 +112,6 @@ echo "# Seguranca
 .venv/
 venv/
 env/" >> .gitignore
-
 ```
 
 > 🔑 Obtenha sua key gratuita em [aistudio.google.com](https://aistudio.google.com)  
@@ -119,19 +119,23 @@ env/" >> .gitignore
 
 ### 2. Instalar Dependências
 
-```bash
+```
+bash
 pip install streamlit pandas google-genai python-dotenv
 ```
 
 ### 3. Rodar a Aplicação
 
-```bash
+```
+bash
 streamlit run src/app.py
 ```
 ## 🎯 Exemplos de Uso
 
-**Pergunta:** "Como estão meus gastos este mês?"  
-**Sumé:** "O IPCA significa Índice de Preços ao Consumidor Amplo. Na prática, ele é o oficial da inflação no Brasil, calculado e divulgado mensalmente pelo IBGE.
+**Pergunta:** 
+```Como estão meus gastos este mês? ``` 
+**Sumé:** 
+```O IPCA significa Índice de Preços ao Consumidor Amplo. Na prática, ele é o oficial da inflação no Brasil, calculado e divulgado mensalmente pelo IBGE.
 
 O que o IPCA mede?
 Ele mede a variação dos preços de um conjunto de produtos e serviços consumidos pelas famílias brasileiras no dia a dia, como:
@@ -149,10 +153,14 @@ Rentabilidade híbrida: Esses investimentos pagam uma taxa fixa (exemplo: IPCA +
 O que isso significa? Significa que o seu dinheiro sempre vai render acima da inflação. Se a inflação subir, o seu rendimento acompanha e ainda entrega o ganho real da taxa fixa contratada.
 Lembrando que qualquer projeção de ganhos futuros com base na inflação é apenas uma estimativa com os índices atuais, combinado?
 
-Tem alguma dúvida sobre como a inflação impacta o seu planejamento ou quer ver um exemplo prático de investimento atrelado ao IPCA?"
+Tem alguma dúvida sobre como a inflação impacta o seu planejamento ou quer ver um exemplo prático de investimento atrelado ao IPCA?
+```
+--- 
 
-**Pergunta:** "Se eu investir 200 reais por mês em IPCA, quanto eu terei em 1 ou 3 anos?"  
-**PCFinance:** "Olá, João!
+**Pergunta:** ```Se eu investir 200 reais por mês em IPCA, quanto eu terei em 1 ou 3 anos?```  
+**PCFinance:** 
+```
+Olá, João!
 
 Com base no seu objetivo principal de construir a sua reserva de emergência, precisamos fazer um ajuste importante antes de falarmos sobre aportes em produtos atrelados ao IPCA:
 
@@ -176,7 +184,8 @@ Caso você decida investir no Tesouro IPCA+ para um objetivo de médio/longo pra
 
 Como não temos acesso ao valor exato do seu patrimônio ou da sua meta sem a sua autorização de extrato, reforço que o primeiro passo recomendado para o seu perfil moderado é garantir que a sua reserva de emergência esteja completa em uma aplicação de liquidez diária (como o Tesouro Selic ou CDB Liquidez Diária).
 
-Quer que eu te ajude a simular os aportes mensais de R$ 200,00 focados na construção da sua reserva de emergência?"
+Quer que eu te ajude a simular os aportes mensais de R$ 200,00 focados na construção da sua reserva de emergência?
+```
 
 ## 📊 Métricas e Avaliação
 
