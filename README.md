@@ -35,7 +35,7 @@ A partir da base contextual de dados do usuário (histórico de transações, me
 ```mermaid
 flowchart TD
     A[Usuário] --> B["Streamlit (Interface Visual)"]
-    B --> C["LLM (Gemini 2.5 Flash)"]
+    B --> C["LLM (Gemini 3.5 Flash Lite)"]
     C <--> D[Base de Conhecimento Local]
     C --> E[Validação & Anti-Alucinação]
     E --> F[Resposta ao Usuário na Interface]
@@ -201,10 +201,9 @@ Quer que eu te ajude a simular os aportes mensais de R$ 200,00 focados na constr
 | Item | Original (Edu) | Sumé |
 |------|---------------|-----------|
 | LLM | Ollama (local) | Gemini 3.5 Flash Lite (API) |
-| Usuários | 1 usuário fixo | 1 usuário fixo |
-| Histórico | Sempre acessivel | Acessavel por autorização |
+| Histórico | Sempre acessível | Acessável por autorização |
 | Siglas e informativos | Não tinha | `siglas_informativos.json` |
-| Foco | Educação financeira | Educação financeira e assistente de investimentos |
+| Foco | Educação financeira | Assistente e educador de investimentos  |
 
 ## 🔮 Melhorias Futuras
 
