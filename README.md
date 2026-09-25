@@ -6,7 +6,7 @@
 
 ## Chat disponível em:
 <a href="https://dio-lab-bia-do-futuro-sume.streamlit.app/" target="_blank">
-  <img src="image/dio-lab-bia-do-futuro-sume.streamlit.png" alt="Accesso ao chat com o agente">
+  <img src="assets/dio-lab-bia-do-futuro-sume.streamlit.png" alt="Accesso ao chat com o agente">
 </a>
 
 > Agente de IA Generativa focado em controle de gastos, educação financeira básica e planejamento de metas pessoais, desenvolvido como parte do **Bootcamp Bradesco - GENAI & Dados** na [DIO](https://www.dio.me/).
